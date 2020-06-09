@@ -1,0 +1,478 @@
+/*Global*/
+
+
+body {
+  font-family: arial, sans-serif !important;
+  font-size: 16px;
+}
+
+/* Header */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background: white;
+  margin: 15px 28px 0 24px;
+  z-index: 1;
+}
+
+#logo {
+  margin-right: 46px;
+}
+
+.logo-and-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-field {
+  width: 32.95rem;
+  height: 2.5rem;
+  border-radius: 1.875rem 0 0 1.875rem;
+  border-right: 1px solid white;
+}
+
+#search-field::placeholder {
+  color: black;
+}
+
+#input-group-text {
+  background-color: white;
+  border-radius: 0 1.875rem 1.875rem 0;
+  border-left: 1px solid white;
+}
+
+#delete-search {
+  color: #80868b;
+}
+
+#search-glass {
+  padding: 0 10px 0 26px;
+  color: #4285f4;
+}
+
+#header-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  list-style: none;
+  font-size: 0.8125em;
+  margin: 13px 0;
+}
+
+#header-links li {
+  padding: 0 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 6px);
+  grid-template-rows: repeat(3, 6px);
+  margin-right: 8px;
+}
+
+.grid-cell {    
+  border: 1px solid white;
+  background-color: #727272;
+}
+
+#profile-picture {
+  background: lightgray;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  line-height: 28px;
+}
+
+#profile-picture i {
+  color:  white;
+  text-align: center;
+}
+
+/* Navigation bar */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  font-size: 0.8125rem;
+  height: 2.5rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav-bar::after {
+  display: block;
+  position: relative;
+  top: 2.8125rem;
+  left: -28.55rem;
+  width: 20rem;
+  content: "About 73,000,000 results (0.40 seconds)";
+  color: #5f6368;
+}
+
+.nav-bar .nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#search-options {
+  position: relative;
+  left: 6.875rem;
+  width: 30rem;
+  margin-bottom: 0px;
+}
+
+#search-options i {
+  padding-right: 0.3125rem;
+  color: #5f6368;
+}
+
+#search-adjustments { 
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  left: 8.75rem;
+  width: 9.375rem;
+  margin-bottom: 0px;
+}
+
+/* Main */
+
+#main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  top: 60px;
+  left: 180px;
+  width: 40.75rem;
+}
+
+.all-results a {
+  font-size: 1.25rem;
+}
+
+.all-results p {
+  font-size: 0.875rem;
+}
+
+.featured-result {
+  margin-bottom: 1rem;
+}
+
+#featured-result {
+  height: 12rem;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+#featured-result p {
+  font-size: 1rem;
+  color: black;
+}
+
+#featured-result a::before {
+  display: block;
+  content: "victor-lf.github.io › google-search-results";
+  font-size: 0.875rem;
+  color: #5f6368;
+}
+
+.feature-feedback {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  left: 21.5rem;
+  width: 20rem;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: #5f6368;
+}
+
+.feature-feedback i {
+  padding-right: 5px;
+}
+
+.all-results a {  
+  font-size: 1.25rem;
+  color: #1a0db2;
+}
+
+.all-results p {  
+  color: #5f6368;
+}
+
+#result-one, #result-three, #result-five, #result-six, #result-seven, #result-eigth {
+  margin-bottom: 2rem;
+}
+
+#result-four {
+  margin-bottom: 1rem;
+}
+
+#result-one::before {
+  display: block;
+  content:"christine-27.github.io › google-homepage";
+  font-size: 0.875rem;
+}
+
+#result-two::before {
+  display: block;
+  content:"arstechnica.com › information-technology › 2013/07";
+  font-size: 0.875rem;
+}
+
+#people-also-search {  
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+#people-also-search h3 {
+  font-weight: bold; 
+  font-size: 0.875rem;
+  color: #5f6368;
+}
+
+#people-also-search i {
+  position: absolute;
+  top: 0.875rem;
+  right: 0.875rem;
+  color: #5f6368;
+}
+
+#people-also-search ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 28.125rem;
+  height: 4.375rem;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+
+#people-also-search li {
+  width: 13.75rem;
+  color: #1a0db2;
+  list-style: none;
+}
+
+#people-also-ask section {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+#people-also-ask h3 {
+  padding: 0.7rem 0 0.7rem 1rem;
+  margin-bottom: 0px;
+  font-size: 1.25rem;
+}
+
+#people-also-ask ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+}
+
+#people-also-ask ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightgray;  
+  padding: 0.7rem 2rem 0.7rem 1rem;
+}
+
+#also-feedback {
+  position: relative;
+  left: 570px;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #5f6368;
+}
+
+#videos-header {
+  font-size: 1.25rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 14rem);
+  grid-auto-rows: 19rem;
+  grid-gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.video-tile {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.video-tile p {
+  margin: 0px;
+  padding: 1rem 1rem 0px 1rem;
+}
+
+
+iframe {
+  height: calc(100% - 11.5rem);
+  width: 100%;
+  object-fit: fill;
+  border-radius: 5px 5px 0 0;
+}
+
+#iframe-title {
+  font-size: 1rem;
+  color: #1a0db2;
+  padding-bottom: 2.3rem;
+}
+
+#result-three::before {
+  content:"www.websitebuilderexpert.com > building-websites";
+  display: block;
+  font-size: 0.875rem;
+}
+
+#result-four::before {
+  content:"www.buildthis.io > make-a-website";
+  display: block;
+  font-size: 0.875rem;
+}
+
+#result-four::after {  
+  content:"Signup for a web hosting · ‎Design your webpage · ‎Validate and test your website";
+  display: block;
+  position: relative;
+  bottom: 1rem;
+  color: #1a0db2;
+  font-size: 0.875rem;
+}
+
+#result-five::before {
+  content:"www.squarespace.com";
+  display: block;
+  font-size: 0.875rem;
+}
+
+#result-six::before {
+  content:"www.google.com > business > website-builder";
+  display: block;
+  font-size: 0.875rem;
+}
+
+#result-seven::before {
+  content:"www.website.com";
+  display: block;
+  font-size: 0.875rem;
+}
+
+#result-eight::before {
+  content:"www.webnode.com";
+  display: block;
+  font-size: 0.875rem;
+}
+
+#related-searches h3 {
+  padding: 0.7rem 0 0.7rem 0;
+  margin-bottom: 0px;
+  font-size: 1.25rem;
+}
+
+#related-searches ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 6.5rem;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+
+#related-searches ul li {
+  width: 17.5rem;
+  color: #1a0db2;
+  font-weight: bold;
+  padding: 0.1rem 0;
+  list-style: none;
+}
+
+#next-pages {
+  position: relative;
+  left: 10.625rem;
+  top: 1.675rem;
+}
+
+/* Footer */ 
+
+#footer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  color: #717171;
+  border-top: 0.5px solid #d3c8c8;
+  font-size: 0.937rem;
+  margin-top: 7.375rem;
+}
+
+#location {
+  padding: 10px 0 10px 179px;
+  border-bottom: 1px solid #d3c8c8;
+}
+
+#location a {
+  font-size: 0.875rem;
+  color: #717171;
+  text-decoration: none;
+}
+
+#location a:hover {
+  color: black;
+}
+
+#country {
+  padding-left: 1.1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.lower-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#terms-and-conditions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 22rem;
+  margin: 0px 0px 0px 140px;
+  padding: 10px 0 10px 40px;
+  list-style: none;
+}
